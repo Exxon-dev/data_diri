@@ -367,7 +367,7 @@
         <!-- Hero Section -->
         <section id="hero">
             <div class="hero-content">
-                <h1 class="rgb-shadow-text">Halo, Saya Company</h1>
+                <h1 class="rgb-shadow-text">Company profile</h1>
                 <p class="subtitle" id="typewriter-target">Web Developer & UI/UX Enthusiast</p>
                 <a href="#portfolio" class="cta-button">Lihat Karya Saya</a>
             </div>
@@ -460,7 +460,7 @@
             <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
         </div>
-        <p>&copy; 2025 &mdash; Didesain dan Dibuat oleh [Nama Anda]</p>
+        <p>&copy; 2025 &mdash; Dibuat oleh Tim PKL</p>
     </footer>
 
     <script>
