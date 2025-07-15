@@ -424,7 +424,7 @@
                 <div class="portfolio-item rgb-shadow-box">
                     <img src="https://placehold.co/600x400/e91e63/ffffff?text=Proyek+Dua" alt="Gambar Proyek 2">
                     <div class="portfolio-content">
-                        <h3>Aplikasi Dashboard Analitik</h3>
+                        <h3>Aplikasi Dashboard yang keren dan bagus</h3>
                         <p>Aplikasi web untuk visualisasi data interaktif menggunakan D3.js, membantu bisnis dalam mengambil keputusan strategis.</p>
                         <a href="#" class="cta-button" target="_blank">Lihat Proyek</a>
                     </div>
