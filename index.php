@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Pribadi — Company</title>
-    
+    <title>Profil Pribadi — Sekolah</title>
+
     <!-- Impor Font dari Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    
+
     <!-- Impor Ikon dari Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -41,15 +42,16 @@
             color: var(--text-light);
             font-family: var(--font-body);
             line-height: 1.7;
-            overflow-x: hidden; /* Mencegah scroll horizontal */
+            overflow-x: hidden;
+            /* Mencegah scroll horizontal */
         }
 
         /* --- EFEK UTAMA: SHADOW RGB TEBAL --- */
         .rgb-shadow-text {
             font-weight: 900;
             color: var(--text-light);
-            text-shadow: 
-                2px 2px 0px var(--purple), 
+            text-shadow:
+                2px 2px 0px var(--purple),
                 -2px -2px 0px var(--pink);
             transition: all 0.3s ease-in-out;
         }
@@ -59,15 +61,17 @@
             border: 1px solid #2f2f2f;
             border-radius: 15px;
             /* Shadow tebal dengan warna ungu dan pink */
-            box-shadow: 
-                8px 8px 25px rgba(155, 89, 182, 0.4),  /* Shadow Ungu */
-                -8px -8px 25px rgba(233, 30, 99, 0.4); /* Shadow Pink */
+            box-shadow:
+                8px 8px 25px rgba(155, 89, 182, 0.4),
+                /* Shadow Ungu */
+                -8px -8px 25px rgba(233, 30, 99, 0.4);
+            /* Shadow Pink */
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .rgb-shadow-box:hover {
             transform: translateY(-10px) scale(1.02);
-            box-shadow: 
+            box-shadow:
                 12px 12px 35px rgba(155, 89, 182, 0.6),
                 -12px -12px 35px rgba(233, 30, 99, 0.6);
         }
@@ -113,7 +117,7 @@
             padding-bottom: 5px;
             transition: color 0.3s ease;
         }
-        
+
         nav ul li a:hover {
             color: var(--pink);
         }
@@ -160,7 +164,8 @@
 
         .hero-content h1 {
             font-family: var(--font-heading);
-            font-size: clamp(2.5rem, 8vw, 5rem); /* Ukuran font responsif */
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            /* Ukuran font responsif */
             margin-bottom: 1rem;
         }
 
@@ -168,7 +173,7 @@
             font-size: clamp(1.2rem, 4vw, 1.5rem);
             margin-bottom: 2.5rem;
             color: #ccc;
-            min-height: 2.2rem; 
+            min-height: 2.2rem;
         }
 
         /* --- Tombol Aksi (CTA Button) --- */
@@ -183,7 +188,7 @@
             border: none;
             cursor: pointer;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
         }
 
         .cta-button:hover {
@@ -207,7 +212,7 @@
             border-radius: 50%;
             border: 7px solid transparent;
             background: linear-gradient(var(--bg-card), var(--bg-card)) padding-box,
-                        linear-gradient(45deg, var(--purple), var(--pink)) border-box;
+                linear-gradient(45deg, var(--purple), var(--pink)) border-box;
         }
 
         .about-text {
@@ -216,8 +221,8 @@
             max-width: 600px;
         }
 
-        /* --- Keahlian --- */
-        .skills-grid {
+        /* --- Jurusan --- */
+        .jurusan-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2.5rem;
@@ -242,41 +247,41 @@
             margin-bottom: 0.5rem;
         }
 
-        /* --- Portofolio --- */
-        .portfolio-grid {
+        /* --- Prestasi --- */
+        .prestasi-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2.5rem;
         }
 
-        .portfolio-item {
+        .prestasi-item {
             overflow: hidden;
             text-align: left;
         }
 
-        .portfolio-item img {
+        .prestasi-item img {
             width: 100%;
             height: 220px;
             object-fit: cover;
             display: block;
             transition: transform 0.4s ease;
         }
-        
-        .portfolio-item:hover img {
+
+        .prestasi-item:hover img {
             transform: scale(1.1);
         }
-        
-        .portfolio-content {
+
+        .prestasi-content {
             padding: 1.5rem;
         }
 
-        .portfolio-content h3 {
+        .prestasi-content h3 {
             font-family: var(--font-heading);
             font-size: 1.4rem;
             margin-bottom: 0.5rem;
         }
-        
-        .portfolio-content p {
+
+        .prestasi-content p {
             font-size: 0.95rem;
             margin-bottom: 1.5rem;
         }
@@ -290,7 +295,8 @@
             gap: 1.5rem;
         }
 
-        .contact-form input, .contact-form textarea {
+        .contact-form input,
+        .contact-form textarea {
             width: 100%;
             padding: 15px;
             border-radius: 10px;
@@ -302,7 +308,8 @@
             transition: all 0.3s ease;
         }
 
-        .contact-form input:focus, .contact-form textarea:focus {
+        .contact-form input:focus,
+        .contact-form textarea:focus {
             outline: none;
             border-color: var(--purple);
             box-shadow: 0 0 15px var(--purple);
@@ -340,24 +347,34 @@
             header {
                 padding: 1rem 5%;
             }
-            nav ul { display: none; } /* Untuk simpel, sembunyikan menu. Bisa diganti menu burger */
-            
-            .section-title { font-size: 2.2rem; }
-            #about .about-container { text-align: center; }
-        }
 
+            nav ul {
+                display: none;
+            }
+
+            /* Untuk simpel, sembunyikan menu. Bisa diganti menu burger */
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            #about .about-container {
+                text-align: center;
+            }
+        }
     </style>
 </head>
+
 <body>
 
     <!-- Header & Navigasi -->
     <header>
         <nav>
-            <a href="#hero" class="logo">Company</a>
+            <a href="#hero" class="logo">SMK MW9</a>
             <ul>
                 <li><a href="#about">Tentang</a></li>
-                <li><a href="#skills">Keahlian</a></li>
-                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#jurusan">Jurusan</a></li>
+                <li><a href="#prestasi">Prestasi</a></li>
                 <li><a href="#contact">Kontak</a></li>
             </ul>
         </nav>
@@ -367,74 +384,87 @@
         <!-- Hero Section -->
         <section id="hero">
             <div class="hero-content">
-                <h1 class="rgb-shadow-text">Company profile</h1>
-                <p class="subtitle" id="typewriter-target">Web Developer & UI/UX Enthusiast</p>
-                <a href="#portfolio" class="cta-button">Lihat Karya Saya</a>
+                <h1 class="rgb-shadow-text">SMK Wali Songo Kajoran</h1>
+                <p class="subtitle" id="typewriter-target">Sekolah Menengah Kejuruan</p>
+                <a href="#prestasi" class="cta-button">Lihat Prestasi</a>
             </div>
         </section>
 
         <!-- Tentang Saya -->
         <section id="about">
-            <h2 class="section-title rgb-shadow-text">Tentang Saya</h2>
+            <h2 class="section-title rgb-shadow-text">Tentang Sekolah</h2>
             <div class="about-container">
-                <img src="https://placehold.co/400x400/1a1a1a/ffffff?text=Foto+Anda" alt="Foto Profil" class="profile-pic">
+                <img src="https://placehold.co/400x400/1a1a1a/ffffff?text=Logo+Sekolah" alt="Logo sekolah" class="profile-pic">
                 <div class="about-text">
-                    <h3>Selamat Datang di Dunia Digital Saya!</h3>
+                    <h3>Selamat Datang Website Sekolah SMK MW9</h3>
                     <p>
-                        Saya adalah seorang profesional yang bersemangat dalam dunia teknologi dengan fokus pada pengembangan web modern dan desain antarmuka yang intuitif. Saya suka belajar hal baru, memecahkan masalah, dan mengubah ide-ide kompleks menjadi solusi digital yang elegan dan fungsional bagi pengguna.
+                        Sekolah ini berfokus pada pengembangan karakter religius dan profesionalitas, menyediakan jurusan teknologi yang relevan, dan aktif dalam kegiatan ekstrakurikuler serta perayaan budaya lokal.
+                        <br><br>
+                        <strong>Visi:</strong>
+                         Menjadi SMK unggul yang menghasilkan lulusan bertaqwa, berkarakter kebangsaan, berwawasan lingkungan, serta profesional dan terampil.
+                        <br><br>
+                        <strong>Misi utama:</strong>
+
+                        Menanamkan nilai Islam Ahlussunnah Wal Jama’ah & nilai kebangsaan
+
+                        Mengintegrasikan ilmu & teknologi sesuai kebutuhan masyarakat dan dunia industri
+
+                        Mengembangkan potensi siswa melalui kemajuan teknologi informasi
+
+                        Membangun kemitraan dengan dunia usaha/industri untuk penyaluran lulusan & wirausaha
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Keahlian -->
-        <section id="skills">
-            <h2 class="section-title rgb-shadow-text">Keahlian Saya</h2>
-            <div class="skills-grid">
+        <!-- Jurusan -->
+        <section id="jurusan">
+            <h2 class="section-title rgb-shadow-text">Jurusan</h2>
+            <div class="jurusan-grid">
                 <div class="skill-card rgb-shadow-box">
                     <i class="fas fa-code"></i>
-                    <h3>Front-End</h3>
-                    <p>HTML, CSS, JavaScript, React, Vue.js, TailwindCSS</p>
+                    <h3>PPLGim</h3>
+                    <p>Pengembangan Perangkat Lunak dan Gim</p>
                 </div>
                 <div class="skill-card rgb-shadow-box">
-                    <i class="fas fa-server"></i>
-                    <h3>Back-End</h3>
-                    <p>Node.js, Express, Python, PHP, SQL, MongoDB</p>
+                    <i class="fas fa-building"></i>
+                    <h3>MPLB</h3>
+                    <p>Menejemen Perkantoran dan Layanan Bisnis</p>
                 </div>
                 <div class="skill-card rgb-shadow-box">
-                    <i class="fas fa-palette"></i>
-                    <h3>Desain Grafis</h3>
-                    <p>Figma, Adobe XD, Photoshop, Prinsip UI/UX</p>
+                    <i class="fas fa-video"></i>
+                    <h3>BCF</h3>
+                    <p>Broadcasting dan Perfilman</p>
                 </div>
             </div>
         </section>
 
-        <!-- Portofolio -->
-        <section id="portfolio">
-            <h2 class="section-title rgb-shadow-text">Portofolio Proyek</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item rgb-shadow-box">
-                    <img src="https://placehold.co/600x400/9b59b6/ffffff?text=Proyek+Satu" alt="Gambar Proyek 1">
-                    <div class="portfolio-content">
+        <!-- Prestasi -->
+        <section id="prestasi">
+            <h2 class="section-title rgb-shadow-text">Prestasi Sekolah</h2>
+            <div class="prestasi-grid">
+                <div class="prestasi-item rgb-shadow-box">
+                    <img src="https://placehold.co/600x400/9b59b6/ffffff?text=Sekolah+Satu" alt="Gambar Sekolah 1">
+                    <div class="prestasi-content">
                         <h3>Website E-Commerce Modern</h3>
                         <p>Platform toko online yang dibangun dengan React dan Node.js, menampilkan desain yang responsif dan sistem pembayaran terintegrasi.</p>
-                        <a href="#" class="cta-button" target="_blank">Lihat Proyek</a>
+                        <a href="#" class="cta-button" target="_blank">Lihat Sekolah</a>
                     </div>
                 </div>
-                <div class="portfolio-item rgb-shadow-box">
-                    <img src="https://placehold.co/600x400/e91e63/ffffff?text=Proyek+Dua" alt="Gambar Proyek 2">
-                    <div class="portfolio-content">
+                <div class="prestasi-item rgb-shadow-box">
+                    <img src="https://placehold.co/600x400/e91e63/ffffff?text=Sekolah+Dua" alt="Gambar Sekolah 2">
+                    <div class="prestasi-content">
                         <h3>Aplikasi Dashboard yang keren dan bagus</h3>
                         <p>Aplikasi web untuk visualisasi data interaktif menggunakan D3.js, membantu bisnis dalam mengambil keputusan strategis.</p>
-                        <a href="#" class="cta-button" target="_blank">Lihat Proyek</a>
+                        <a href="#" class="cta-button" target="_blank">Lihat Sekolah</a>
                     </div>
                 </div>
-                <div class="portfolio-item rgb-shadow-box">
-                    <img src="https://placehold.co/600x400/3498db/ffffff?text=Proyek+Tiga" alt="Gambar Proyek 3">
-                    <div class="portfolio-content">
+                <div class="prestasi-item rgb-shadow-box">
+                    <img src="https://placehold.co/600x400/3498db/ffffff?text=Sekolah+Tiga" alt="Gambar Sekolah 3">
+                    <div class="prestasi-content">
                         <h3>Desain Ulang Aplikasi Mobile</h3>
-                        <p>Proyek desain UI/UX lengkap untuk aplikasi mobile, berfokus pada peningkatan pengalaman pengguna dan alur kerja yang intuitif.</p>
-                        <a href="#" class="cta-button" target="_blank">Lihat Proyek</a>
+                        <p>Sekolah desain UI/UX lengkap untuk aplikasi mobile, berfokus pada peningkatan pengalaman pengguna dan alur kerja yang intuitif.</p>
+                        <a href="#" class="cta-button" target="_blank">Lihat Sekolah</a>
                     </div>
                 </div>
             </div>
@@ -484,4 +514,5 @@
     </script>
 
 </body>
+
 </html>
