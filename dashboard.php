@@ -401,7 +401,7 @@
                         Sekolah ini berfokus pada pengembangan karakter religius dan profesionalitas, menyediakan jurusan teknologi yang relevan, dan aktif dalam kegiatan ekstrakurikuler serta perayaan budaya lokal.
                         <br><br>
                         <strong>Visi:</strong>
-                         Menjadi SMK unggul yang menghasilkan lulusan bertaqwa, berkarakter kebangsaan, berwawasan lingkungan, serta profesional dan terampil.
+                        Menjadi SMK unggul yang menghasilkan lulusan bertaqwa, berkarakter kebangsaan, berwawasan lingkungan, serta profesional dan terampil.
                         <br><br>
                         <strong>Misi utama:</strong>
 
@@ -473,10 +473,11 @@
         <!-- Kontak -->
         <section id="contact">
             <h2 class="section-title rgb-shadow-text">Hubungi Saya</h2>
-            <form class="contact-form" action="kirim_pesan.php" method="POST">
-                <input type="text" name="name" placeholder="Nama Lengkap Anda" required>
-                <input type="email" name="email" placeholder="Alamat Email Anda" required>
-                <textarea name="message" rows="6" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+            <!-- Tambahkan ini di bagian form -->
+            <form class="contact-form" action="proses/proses_kirimpesan.php" method="POST">
+                <input type="text" name="pengirim" placeholder="Nama Lengkap Anda" required>
+                <input type="text" name="judul" placeholder="Judul Pesan">
+                <textarea name="isi" rows="6" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
                 <button type="submit" class="cta-button">Kirim Pesan</button>
             </form>
         </section>
