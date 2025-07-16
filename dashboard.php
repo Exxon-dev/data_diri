@@ -444,7 +444,7 @@
             <h2 class="section-title rgb-shadow-text">Prestasi Sekolah</h2>
             <div class="prestasi-grid">
                 <div class="prestasi-item rgb-shadow-box">
-                    <img src="https://placehold.co/600x400/9b59b6/ffffff?text=Sekolah+Satu" alt="Gambar Sekolah 1">
+                    <img src="img/poto1.png" alt="Gambar Sekolah 1">
                     <div class="prestasi-content">
                         <h3>IT Web Desain Tecnology</h3>
                         <p>Selamat dan Sukses atas prestasi yang diraih dalam lomba kompetensi siswa tingkat kabupaten magelang pada mata lomba IT Web Design Technology</p>
