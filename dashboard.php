@@ -1,3 +1,7 @@
+<?php
+include 'koneksi.php';
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 
@@ -476,10 +480,67 @@
             <!-- Tambahkan ini di bagian form -->
             <form class="contact-form" action="proses/proses_kirimpesan.php" method="POST">
                 <input type="text" name="pengirim" placeholder="Nama Lengkap Anda" required>
+                <input type="email" name="email" placeholder="Email Anda" required>
                 <input type="text" name="judul" placeholder="Judul Pesan">
                 <textarea name="isi" rows="6" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
                 <button type="submit" class="cta-button">Kirim Pesan</button>
             </form>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script>
+                document.getElementById('pesanForm').addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    Swal.fire({
+                        title: 'Konfirmasi',
+                        text: "Anda yakin ingin mengirim pesan ini?",
+                        icon: 'question',
+                        background: '#1a1a1a',
+                        color: '#f0f0f0',
+                        showCancelButton: true,
+                        confirmButtonColor: '#9b59b6',
+                        cancelButtonColor: '#e91e63',
+                        confirmButtonText: 'Ya, Kirim!'
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            // Submit form setelah konfirmasi
+                            this.submit();
+
+                            // Tampilkan loading
+                            Swal.fire({
+                                title: 'Mengirim...',
+                                text: 'Sedang memproses pesan Anda',
+                                allowOutsideClick: false,
+                                didOpen: () => {
+                                    Swal.showLoading();
+                                }
+                            });
+                        }
+                    });
+                });
+
+                // Notifikasi hasil pengiriman (JANGAN DIHAPUS)
+                <?php if (isset($_SESSION['flash_sukses'])): ?>
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Berhasil!',
+                        text: '<?= $_SESSION['flash_sukses'] ?>',
+                        background: "#1a1a1a",
+                        confirmButtonColor: "#9b59b6"
+                    });
+                    <?php unset($_SESSION['flash_sukses']); ?>
+                <?php endif; ?>
+
+                <?php if (isset($_SESSION['flash_error'])): ?>
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Gagal!',
+                        text: '<?= $_SESSION['flash_error'] ?>',
+                        background: "#1a1a1a",
+                        confirmButtonColor: "#e91e63"
+                    });
+                    <?php unset($_SESSION['flash_error']); ?>
+                <?php endif; ?>
+            </script>
         </section>
     </main>
 
