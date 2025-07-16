@@ -394,7 +394,7 @@
         <section id="about">
             <h2 class="section-title rgb-shadow-text">Tentang Sekolah</h2>
             <div class="about-container">
-                <img src="https://placehold.co/400x400/1a1a1a/ffffff?text=Logo+Sekolah" alt="Logo sekolah" class="profile-pic">
+                <img src="img/smk.jpg" alt="Logo sekolah" class="profile-pic">
                 <div class="about-text">
                     <h3>Selamat Datang Website Sekolah SMK MW9</h3>
                     <p>
@@ -452,18 +452,18 @@
                     </div>
                 </div>
                 <div class="prestasi-item rgb-shadow-box">
-                    <img src="https://placehold.co/600x400/e91e63/ffffff?text=Sekolah+Dua" alt="Gambar Sekolah 2">
+                    <img src="img/poto2.png" alt="Gambar Sekolah 2">
                     <div class="prestasi-content">
-                        <h3>Aplikasi Dashboard yang keren dan bagus</h3>
-                        <p>Aplikasi web untuk visualisasi data interaktif menggunakan D3.js, membantu bisnis dalam mengambil keputusan strategis.</p>
+                        <h3>Bilingual Secretary</h3>
+                        <p>Selamat dan Sukses atas prestasi yang diraih dalam lomba kompetensi siswa tingkat kabupaten magelang pada mata lomba Bilingual Secretary</p>
                         <a href="#" class="cta-button" target="_blank">Lihat Sekolah</a>
                     </div>
                 </div>
                 <div class="prestasi-item rgb-shadow-box">
-                    <img src="https://placehold.co/600x400/3498db/ffffff?text=Sekolah+Tiga" alt="Gambar Sekolah 3">
+                    <img src="img/poto3.png" alt="Gambar Sekolah 3">
                     <div class="prestasi-content">
-                        <h3>Desain Ulang Aplikasi Mobile</h3>
-                        <p>Sekolah desain UI/UX lengkap untuk aplikasi mobile, berfokus pada peningkatan pengalaman pengguna dan alur kerja yang intuitif.</p>
+                        <h3>Tv News Production</h3>
+                        <p>Selamat dan Sukses atas prestasi yang diraih dalam lomba kompetensi siswa tingkat kabupaten magelang pada mata lomba Tv News Production.</p>
                         <a href="#" class="cta-button" target="_blank">Lihat Sekolah</a>
                     </div>
                 </div>
