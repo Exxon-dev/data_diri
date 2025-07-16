@@ -380,6 +380,8 @@ include 'koneksi.php';
                 <li><a href="#jurusan">Jurusan</a></li>
                 <li><a href="#prestasi">Prestasi</a></li>
                 <li><a href="#contact">Kontak</a></li>
+                <li><a href="blog.php">Blogclear
+                </a></li>
             </ul>
         </nav>
     </header>
@@ -480,8 +482,7 @@ include 'koneksi.php';
             <!-- Tambahkan ini di bagian form -->
             <form class="contact-form" action="proses/proses_kirimpesan.php" method="POST">
                 <input type="text" name="pengirim" placeholder="Nama Lengkap Anda" required>
-                <input type="email" name="email" placeholder="Email Anda" required>
-                <input type="text" name="judul" placeholder="Judul Pesan">
+                <input type="text" name="judul" placeholder="Judul Pesan (Kritik, Pesan, dan Saran)" required>
                 <textarea name="isi" rows="6" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
                 <button type="submit" class="cta-button">Kirim Pesan</button>
             </form>
