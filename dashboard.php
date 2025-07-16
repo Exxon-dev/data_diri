@@ -446,8 +446,8 @@
                 <div class="prestasi-item rgb-shadow-box">
                     <img src="https://placehold.co/600x400/9b59b6/ffffff?text=Sekolah+Satu" alt="Gambar Sekolah 1">
                     <div class="prestasi-content">
-                        <h3>Website E-Commerce Modern</h3>
-                        <p>Platform toko online yang dibangun dengan React dan Node.js, menampilkan desain yang responsif dan sistem pembayaran terintegrasi.</p>
+                        <h3>IT Web Desain Tecnology</h3>
+                        <p>Selamat dan Sukses atas prestasi yang diraih dalam lomba kompetensi siswa tingkat kabupaten magelang pada mata lomba IT Web Design Technology</p>
                         <a href="#" class="cta-button" target="_blank">Lihat Sekolah</a>
                     </div>
                 </div>
